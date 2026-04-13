@@ -74,10 +74,10 @@ tablica <- tableGrob(round(df, 3))
 grid.newpage()
 grid.draw(tablica)
 
-ggsave("graf_glavni_transformator_600.pdf", plot = p1, width = 8, height = 5)
-ggsave("graf_reziduali_transformator_600.pdf", plot = p2, width = 8, height = 4.5)
+ggsave("graf.pdf", plot = p1, width = 8, height = 5)
+ggsave("reziduali.pdf", plot = p2, width = 8, height = 4.5)
 
-pdf("tablica_transformator_600.pdf", width = 8, height = 3.2)
+pdf("tablica.pdf", width = 8, height = 3.2)
 grid.newpage()
 grid.draw(tablica)
 dev.off()
